@@ -1,0 +1,26 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "nodejs tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajitkumar-25/NODEJS.git"
+  },
+  "keywords": [
+    "learn",
+    "nodejs"
+  ],
+  "author": "Ajit kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ajitkumar-25/NODEJS/issues"
+  },
+  "homepage": "https://github.com/Ajitkumar-25/NODEJS#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
