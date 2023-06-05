@@ -12,4 +12,30 @@ app.get('/',(_,resp)=>{
 app.get('/about',(_,resp)=>{
     resp.sendFile(`${publicpath}/about.html`)
 })
+
+
+//here i am using ejs package to make profile page stored in views folder
+app.set('view engine','ejs');
+app.get('/profile',(_,resp)=>{
+    const user={
+        name:'ajit',
+        batch:'b9',
+        enrollno:"21103317",
+        skills:['c++','java','php','mysql']
+    }
+    resp.render('profile',{user})
+})
+
+
+app.get('/login',(_,resp)=>{
+    resp.render('login')
+})
+
+
+
+
+
 app.listen(5000);
+
+
+

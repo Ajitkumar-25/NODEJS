@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <%-include('common/header') %>
+    <h1>
+       welcome <%= user.name %>
+    </h1>
+    <p>
+        <strong>Batch:</strong>
+        <%= user.batch %>
+        <strong>Enrollno:</strong>
+        <%= user.enrollno %>
+    </p>
+
+    <ol>
+        <% user.skills.forEach(element => { %>
+        <li> <%=element  %></li>
+        <% }) %>
+
+           
+       
+    </ol>
+    
+</body>
+</html>
